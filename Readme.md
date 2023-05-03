@@ -1,9 +1,9 @@
 En este repositorio son las primeras pruebas para el git y github.
 
 Para crear un documento txt es necesario utilizar el siguiente comando:
-pip freeze > paquetes.txt
+pip freeze > requirements.txt
 
-Con este comando se pondra en el documento paquetes.txt todas las librerias que hemos instalado en el entorno virtual.
+Con este comando se pondra en el documento requirements.txt todas las librerias que hemos instalado en el entorno virtual.
 
 Si el dia de mañana deseamos instalar los paquetes en un nuevo equipo se tendrá que crear el entorno virtual recordando que se usa el siguiente comando para crear un entorno virtual con el nombre de Entorno:
 python3 -m venv Entorno
@@ -14,3 +14,6 @@ Podemos crear un alias de la siguiente forma para que sea más fácil de activar
 alias activate="source Entorno/bin/activate"
 
 Para desactivarlo es con el comando: deactivate.
+
+Para instalar todos los paquetes que se encuentran en el documento requirements.txt se ejecuta el siguiente comando:
+pip install -r requirements.txt
